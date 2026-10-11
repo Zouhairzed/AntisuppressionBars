@@ -32,7 +32,7 @@
 
   var isTouch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
 
-  var GAMES = [Blaster, Racer, Runner, Snake, Maze, Blocks, SplitStack, Paddle, Fruit, Picture];
+  var GAMES = [Blaster, Racer, Runner, Snake, Maze, Blocks, SplitStack, Paddle, Fruit];
   var MENU = [
     { label: 'Reading', icon: MENU_ART.reading.icon, sub: STORIES.length + ' stories', action: function () { openLibrary(); } }
   ].concat(GAMES.map(function (g) {
