@@ -20,7 +20,7 @@ LG webOS TV app; it shares the same game and bar code.
 - **Hop & Duck** — jump blocks, duck birds, collect stars
 - **Snake** — eat food, grow longer, avoid the walls and your tail
 - **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
-- **Settings** — glasses type (red/green or red/blue), horizontal/vertical bars, bar width,
+- **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
   strength, red / green / blue shades, text size
 
 Everything runs offline in the browser. Settings and best scores are saved in the browser's

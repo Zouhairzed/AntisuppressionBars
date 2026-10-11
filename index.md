@@ -58,7 +58,7 @@ computers, tablets and phones, with no sign-up or download.
 | Setting | Options |
 |---|---|
 | Glasses | red / green, red / blue |
-| Orientation | horizontal or vertical bars |
+| Orientation | vertical (default) or horizontal bars |
 | Bar width | 20 to 200 px |
 | Bar strength | 20% to 100% |
 | Red shade | 8 shades |
