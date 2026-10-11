@@ -23,7 +23,8 @@ Everything runs offline in the browser. Settings and best scores are saved in th
 local storage; nothing is sent anywhere.
 
 ## Play
-Open `index.html` in a browser, or use the GitHub Pages link once Pages is enabled (below).
+Open `play.html` in a browser, or use the website once GitHub Pages is enabled (below):
+the home page is a Cayman-themed Jekyll site with a **Play now** button.
 
 ### Keyboard
 | Key | Menu | Reading | Games | Settings |
@@ -44,18 +45,24 @@ Open `index.html` in a browser, or use the GitHub Pages link once Pages is enabl
 
 ## Before playing
 1. Turn off night mode / blue-light filters on your screen — they change the colours.
-2. Wear your red-green glasses.
+2. Wear your red-green or red-blue glasses.
 3. In Settings, set **Glasses** to red/green or red/blue, then adjust the shades until each eye
    sees only its own colour of bar. The home menu has no bars; Settings shows them as a preview.
 
 ## Publish with GitHub Pages
-The workflow in `.github/workflows/pages.yml` deploys the site on every push to `main`.
+The site uses Jekyll with the **Cayman** theme. The workflow in `.github/workflows/pages.yml`
+builds it with GitHub's Jekyll action and deploys it on every push to `main`.
 Enable it once: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
 (On a free GitHub plan, Pages needs the repository to be public.)
 
 ## Project layout
 ```
-index.html        page + stage markup
+_config.yml       Jekyll config (Cayman theme)
+_layouts/         Cayman layout with a Play now button
+index.md          home page
+privacy.md        privacy policy (/privacy)
+assets/css/       theme stylesheet + site styles
+play.html         the game (served as-is, not themed)
 css/app.css       shared 1920×1080 layout
 css/web.css       window scaling, mouse and touch pad
 js/app.js         web controller (screens, keyboard, mouse, touch)

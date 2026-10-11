@@ -1,0 +1,18 @@
+title: Antisuppression Bars
+description: Red-green and red-blue reading bars with 5 games, for at-home binocular vision exercises.
+theme: jekyll-theme-cayman
+lang: en-US
+show_downloads: false
+
+# Site-wide link used in the header "Play now" button
+play_url: play.html
+
+plugins:
+  - jekyll-seo-tag
+
+# The game (play.html, css/, js/, assets/) is served as-is; these files are not site pages
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .github/

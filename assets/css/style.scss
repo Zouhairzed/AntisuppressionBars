@@ -1,0 +1,48 @@
+---
+---
+
+@import 'jekyll-theme-cayman';
+
+/* Play button: solid so it stands out from the other header buttons */
+.page-header .btn-play {
+  background-color: #fff;
+  border-color: #fff;
+  color: #155799;
+  font-weight: 700;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.85);
+    color: #155799;
+    text-decoration: none;
+  }
+}
+
+/* Screenshot grid */
+.shots {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+
+  figure { margin: 0; }
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 0.3rem;
+    border: 1px solid #dce6f0;
+  }
+  figcaption {
+    font-size: 0.9rem;
+    color: #606c71;
+    margin-top: 0.35rem;
+  }
+}
+
+/* Medical notice */
+.notice {
+  border-left: 0.3rem solid #e0a800;
+  background: #fff8e1;
+  padding: 0.8rem 1rem;
+  margin: 1rem 0 1.5rem;
+  color: #4a4a4a;
+}
