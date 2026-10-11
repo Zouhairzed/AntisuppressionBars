@@ -26,6 +26,7 @@ LG webOS TV app; it shares the same game and bar code.
   - **Split Stack** — the falling block for the weaker eye, the stack for the stronger eye
   - **Ball & Paddle** — ball and bricks for the weaker eye, paddle for the stronger eye
   - **Fruit Catcher** — fruit and bugs for the weaker eye, basket for the stronger eye
+  - **Picture Slide** — sliding picture puzzle: pieces for the weaker eye, tile edges and numbers for the stronger eye
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
   strength, red / green / blue colours, weaker eye, strong-eye contrast, text size, music and
   sound effects on/off
@@ -91,5 +92,5 @@ js/library.js     story list
 js/sound.js       synthesized music and sound effects (Web Audio)
 js/menu-art.js    menu tile icons
 js/calibrate.js   colour test and picker
-js/games/         engine + nine games
+js/games/         engine + ten games
 ```
