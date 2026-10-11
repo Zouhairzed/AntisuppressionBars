@@ -15,7 +15,7 @@ ophthalmologist. It is not a medical device and does not diagnose or treat any c
 <a href="{{ site.play_url | relative_url }}"><strong>▶ Play in your browser</strong></a>. Works on
 computers, tablets and phones, with no sign-up or download.
 
-![The home menu: Reading, six games and Settings]({{ '/screenshots/menu.png' | relative_url }})
+![The home menu: Reading, ten games and Settings]({{ '/screenshots/menu.png' | relative_url }})
 
 ## What's inside
 
@@ -49,6 +49,22 @@ computers, tablets and phones, with no sign-up or download.
     <figcaption><strong>Block Drop</strong>: rotate the blocks, fill the lines</figcaption>
   </figure>
   <figure>
+    <img src="{{ '/screenshots/split-stack.png' | relative_url }}" alt="Split Stack: the falling block in red, the stack in green">
+    <figcaption><strong>Split Stack</strong> (two-eye): the block for one eye, the stack for the other</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/screenshots/ball-and-paddle.png' | relative_url }}" alt="Ball and Paddle: red bricks and ball, green paddle">
+    <figcaption><strong>Ball &amp; Paddle</strong> (two-eye): ball and bricks for one eye, paddle for the other</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/screenshots/fruit-catcher.png' | relative_url }}" alt="Fruit Catcher: red fruit falling into a green basket">
+    <figcaption><strong>Fruit Catcher</strong> (two-eye): catch the fruit, not the bugs</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/screenshots/hidden-picture.png' | relative_url }}" alt="Hidden Picture: a triangle made of red and green dots, with three answers">
+    <figcaption><strong>Hidden Picture</strong> (two-eye): find the shape in the dots</figcaption>
+  </figure>
+  <figure>
     <img src="{{ '/screenshots/library.png' | relative_url }}" alt="Story list: 19 story tiles with drawings">
     <figcaption><strong>Story list</strong>: pick a story by its picture</figcaption>
   </figure>
@@ -67,6 +83,14 @@ computers, tablets and phones, with no sign-up or download.
    for the other eye. Screens show colour differently, so the best colour depends on your display.
 5. Follow the session length and schedule your eye-care provider recommends.
 
+## Two-eye games
+
+In **Split Stack**, **Ball & Paddle**, **Fruit Catcher** and **Hidden Picture** the bars are switched
+off. Instead, some parts of the game are drawn only in the weaker eye's colour and others only in
+the stronger eye's colour, so you can only play by using both eyes together. Set **Weaker eye** in
+Settings first. **Strong-eye contrast** dims the stronger eye's parts; ask your eye-care provider
+what level to start with.
+
 ## Settings
 
 | Setting | Options |
@@ -78,6 +102,8 @@ computers, tablets and phones, with no sign-up or download.
 | Red colour | default #9B1819, or a preset |
 | Green colour or Blue colour | default #1A9B1C (green), or a preset |
 | Colour test | a cat test with R / G / B colour pickers, to tune both colours to your glasses |
+| Weaker eye | behind the red lens or behind the green / blue lens, for the two-eye games |
+| Strong-eye contrast | 100% to 20%: dims what only the stronger eye sees in the two-eye games |
 | Text size | 32 to 72 px, for the reading stories |
 | Music | on / off: soft background music, a different theme for each game |
 | Sound effects | on / off: short sounds for moves, shots, jumps and pickups |
