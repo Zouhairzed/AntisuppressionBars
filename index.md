@@ -45,10 +45,6 @@ computers, tablets and phones, with no sign-up or download.
     <figcaption><strong>Maze Mouse</strong>: eat crumbs, escape the cats</figcaption>
   </figure>
   <figure>
-    <img src="{{ '/screenshots/block-drop.png' | relative_url }}" alt="Block Drop: falling blocks stacking in a well">
-    <figcaption><strong>Block Drop</strong>: rotate the blocks, fill the lines</figcaption>
-  </figure>
-  <figure>
     <img src="{{ '/screenshots/split-stack.png' | relative_url }}" alt="Split Stack: the falling block in red, the stack in green">
     <figcaption><strong>Split Stack</strong> (two-eye): the block for one eye, the stack for the other</figcaption>
   </figure>
@@ -63,6 +59,10 @@ computers, tablets and phones, with no sign-up or download.
   <figure>
     <img src="{{ '/screenshots/picture-slide.png' | relative_url }}" alt="Picture Slide: a shuffled red and green dinosaur picture">
     <figcaption><strong>Picture Slide</strong> (two-eye): rebuild the red and green dinosaur</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/screenshots/cheese-chase.png' | relative_url }}" alt="Cheese Chase: a red mouse and crumbs in a green maze with green cats">
+    <figcaption><strong>Cheese Chase</strong> (two-eye): mouse for one eye, maze and cats for the other</figcaption>
   </figure>
   <figure>
     <img src="{{ '/screenshots/library.png' | relative_url }}" alt="Story list: 19 story tiles with drawings">
@@ -85,7 +85,7 @@ computers, tablets and phones, with no sign-up or download.
 
 ## Two-eye games
 
-In **Split Stack**, **Ball & Paddle**, **Fruit Catcher** and **Picture Slide** the bars are switched off. Instead,
+In **Split Stack**, **Ball & Paddle**, **Fruit Catcher**, **Picture Slide** and **Cheese Chase** the bars are switched off. Instead,
 some parts of the game are drawn only in the weaker eye's colour and others only in the stronger
 eye's colour (the Red and Green / Blue colours you set in Settings), so you can only play by using both eyes together. Set **Weaker eye** in
 Settings first. **Strong-eye contrast** dims the stronger eye's parts; ask your eye-care provider

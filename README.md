@@ -21,12 +21,12 @@ LG webOS TV app; it shares the same game and bar code.
 - **Hop & Duck** — jump blocks, duck birds, collect stars
 - **Snake** — eat food, grow longer, avoid the walls and your tail
 - **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
-- **Block Drop** — rotate the falling blocks to fill and clear complete lines
 - **Two-eye games** (no bars; each eye sees different parts, in the Red / Green colours from Settings):
   - **Split Stack** — the falling block for the weaker eye, the stack for the stronger eye
   - **Ball & Paddle** — ball and bricks for the weaker eye, paddle for the stronger eye
   - **Fruit Catcher** — fruit and bugs for the weaker eye, basket for the stronger eye
   - **Picture Slide** — sliding dinosaur puzzle: some parts of each dinosaur for the weaker eye, the rest for the stronger eye
+  - **Cheese Chase** — maze chase: mouse and crumbs for the weaker eye, walls and cats for the stronger eye
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
   strength, red / green / blue colours, weaker eye, strong-eye contrast, text size, music and
   sound effects on/off
@@ -46,7 +46,7 @@ with a **Play now** button.
 ### Keyboard
 | Key | Menu | Reading | Games | Settings |
 |---|---|---|---|---|
-| ↑ ↓ | select | scroll | jump / duck, steer, rotate / drop (Block Drop) | choose setting |
+| ↑ ↓ | select | scroll | jump / duck, steer, rotate / drop (Split Stack) | choose setting |
 | ← → | select | change story | move / change lane / steer | change value |
 | Enter / Space | open | open settings | fire / jump / play again | close |
 | Esc | — | back to menu | back to menu | close |
