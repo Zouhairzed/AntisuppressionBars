@@ -64,6 +64,8 @@ computers, tablets and phones, with no sign-up or download.
 | Red shade | 8 shades |
 | Green shade or Blue shade | 9 shades (matches the chosen glasses) |
 | Text size | 32 to 72 px, for the reading stories |
+| Music | on / off: soft background music during games |
+| Sound effects | on / off: short sounds for moves, shots, jumps and pickups |
 
 Settings and best scores are saved in your browser.
 
@@ -75,6 +77,7 @@ Settings and best scores are saved in your browser.
 | Fire, jump, select | Space or Enter | OK |
 | Pause | P | Pause |
 | Settings | S | Bars |
+| Music on / off | M | (in Settings) |
 | Back to menu | Esc | Menu |
 | Fullscreen | F | |
 

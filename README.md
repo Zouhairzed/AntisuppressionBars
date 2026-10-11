@@ -21,7 +21,7 @@ LG webOS TV app; it shares the same game and bar code.
 - **Snake** — eat food, grow longer, avoid the walls and your tail
 - **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
-  strength, red / green / blue shades, text size
+  strength, red / green / blue shades, text size, music and sound effects on/off
 
 Everything runs offline in the browser. Settings and best scores are saved in the browser's
 local storage; nothing is sent anywhere.
@@ -40,6 +40,7 @@ with a **Play now** button.
 | Enter / Space | open | open settings | fire / jump / play again | close |
 | Esc | — | back to menu | back to menu | close |
 | S | settings | settings | settings | close |
+| M | music on/off | music on/off | music on/off | music on/off |
 | P | — | — | pause | — |
 | R / G | — | bar direction / bar width | — | — |
 | F | fullscreen | fullscreen | fullscreen | fullscreen |
@@ -75,5 +76,6 @@ js/app.js         web controller (screens, keyboard, mouse, touch)
 js/settings.js    saved settings
 js/bars.js        red/green bar rendering
 js/stories.js     reading content
+js/sound.js       synthesized music and sound effects (Web Audio)
 js/games/         engine + five games
 ```

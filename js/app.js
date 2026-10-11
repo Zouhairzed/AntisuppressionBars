@@ -79,6 +79,7 @@
 
   function changeStory(dir) {
     storyIdx = (storyIdx + dir + STORIES.length) % STORIES.length;
+    Sound.play('page');
     renderText();
     scrollY = 0;
     scroll(0);
@@ -100,6 +101,7 @@
 
   function apply() {
     Bars.render(barsEl, s);
+    Sound.configure({ music: s.music === 'on', sfx: s.sfx === 'on' });
     renderText();
     if (panelOpen()) renderPanel();
   }
@@ -123,7 +125,7 @@
     show('game');
     gameHint.textContent = isTouch
       ? g.hint.replace(/OK/g, 'OK button')
-      : g.hint.replace(/OK/g, 'Space') + '  ·  P pause  ·  S settings  ·  Esc menu';
+      : g.hint.replace(/OK/g, 'Space') + '  ·  P pause  ·  M music  ·  S settings  ·  Esc menu';
     Engine.start(canvas, g);
   }
 
@@ -162,6 +164,7 @@
       if (k === KEY.LEFT) Settings.cycle(s, setKeys[setFocus], -1);
       if (k === KEY.RIGHT) Settings.cycle(s, setKeys[setFocus], 1);
       apply();
+      if (k >= KEY.LEFT && k <= KEY.DOWN) Sound.play('nav');
       return;
     }
 
@@ -170,7 +173,8 @@
     if (screen === 'menu') {
       if (k === KEY.UP) menuFocus = (menuFocus - 1 + MENU.length) % MENU.length;
       if (k === KEY.DOWN) menuFocus = (menuFocus + 1) % MENU.length;
-      if (k === KEY.ENTER) { MENU[menuFocus].action(); return; }
+      if (k === KEY.UP || k === KEY.DOWN) Sound.play('nav');
+      if (k === KEY.ENTER) { Sound.play('select'); MENU[menuFocus].action(); return; }
       renderMenu();
       return;
     }
@@ -199,12 +203,19 @@
     disclaimer.classList.add('hidden');
     s.seenDisclaimer = true;
     Settings.save(s);
+    Sound.play('select');
   }
 
   // Keyboard
   document.addEventListener('keydown', function (e) {
     if (e.ctrlKey || e.metaKey || e.altKey) return;
     if (e.keyCode === 70) { toggleFullscreen(); return; } // F
+    if (e.keyCode === 77) { // M: music on/off
+      s.music = s.music === 'on' ? 'off' : 'on';
+      Settings.save(s);
+      apply();
+      return;
+    }
     var k = code(e);
     if ([KEY.LEFT, KEY.UP, KEY.RIGHT, KEY.DOWN, KEY.ENTER, KEY.BACK].indexOf(k) >= 0) e.preventDefault();
     if (e.repeat && screen === 'game') return; // held keys are tracked by the engine
@@ -217,6 +228,7 @@
     var li = e.target.closest('li');
     if (!li) return;
     menuFocus = +li.dataset.i;
+    Sound.play('select');
     MENU[menuFocus].action();
   });
 
@@ -231,6 +243,7 @@
       Settings.cycle(s, setKeys[setFocus], e.clientX < r.left + r.width / 2 ? -1 : 1);
     }
     apply();
+    Sound.play('nav');
   });
 
   disclaimer.addEventListener('click', dismissDisclaimer);
