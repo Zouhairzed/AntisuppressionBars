@@ -32,14 +32,28 @@
 
   var isTouch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
 
-  var GAMES = [Blaster, Racer, Runner, Snake, Maze, Blocks, SplitStack, Paddle, Fruit, Slide];
-  var MENU = [
-    { label: 'Reading', icon: MENU_ART.reading.icon, sub: STORIES.length + ' stories', action: function () { openLibrary(); } }
-  ].concat(GAMES.map(function (g) {
+  // Home menu in three groups: reading & settings, games with bars, two-eye games (no bars)
+  var BAR_GAMES = [Blaster, Racer, Runner, Snake, Maze, Blocks];
+  var EYE_GAMES = [SplitStack, Paddle, Fruit, Slide];
+  function gameItem(g) {
     return { label: g.title, icon: MENU_ART[g.id].icon, sub: MENU_ART[g.id].tag, action: function () { startGame(g); } };
-  })).concat([
+  }
+  var MENU = [
+    { label: 'Reading', icon: MENU_ART.reading.icon, sub: STORIES.length + ' stories', action: function () { openLibrary(); } },
     { label: 'Settings', icon: MENU_ART.settings.icon, sub: MENU_ART.settings.tag, action: function () { openPanel(); } }
-  ]);
+  ].concat(BAR_GAMES.map(gameItem), EYE_GAMES.map(gameItem));
+  var MENU_ROWS = [
+    { title: 'Read and set up', items: [0, 1] },
+    { title: 'Games with bars', items: [2, 3, 4, 5, 6, 7] },
+    { title: 'Two-eye games · no bars', items: [8, 9, 10, 11] }
+  ];
+  function menuRowOf(i) {
+    for (var r = 0; r < MENU_ROWS.length; r++) {
+      var c = MENU_ROWS[r].items.indexOf(i);
+      if (c >= 0) return { r: r, c: c };
+    }
+    return { r: 0, c: 0 };
+  }
 
   var screen = 'menu';
   var menuFocus = 0, setFocus = 0, scrollY = 0, storyIdx = 0;
@@ -59,9 +73,12 @@
   /* ---------- rendering ---------- */
 
   function renderMenu() {
-    menuList.innerHTML = MENU.map(function (m, i) {
-      return '<li data-i="' + i + '" class="' + (i === menuFocus ? 'focused' : '') + '"><span class="icon">' + m.icon + '</span><span class="label">' + m.label +
-        '</span><span class="sub">' + m.sub + '</span></li>';
+    menuList.innerHTML = MENU_ROWS.map(function (row) {
+      return '<li class="menu-head">' + row.title + '</li>' + row.items.map(function (i) {
+        var m = MENU[i];
+        return '<li data-i="' + i + '" class="' + (i === menuFocus ? 'focused' : '') + '"><span class="icon">' + m.icon +
+          '</span><span class="label">' + m.label + '</span><span class="sub">' + m.sub + '</span></li>';
+      }).join('');
     }).join('');
   }
 
@@ -215,12 +232,14 @@
     if (screen === 'library') { Library.key(k); return; }
 
     if (screen === 'menu') {
-      // 4 x 2 grid of tiles: LEFT/RIGHT step through, UP/DOWN jump a row
-      var n = MENU.length;
-      if (k === KEY.LEFT) menuFocus = (menuFocus - 1 + n) % n;
-      if (k === KEY.RIGHT) menuFocus = (menuFocus + 1) % n;
-      if (k === KEY.UP) menuFocus = (menuFocus - 4 + n) % n;
-      if (k === KEY.DOWN) menuFocus = (menuFocus + 4) % n;
+      // Three rows of tiles: LEFT/RIGHT move within a row, UP/DOWN move between rows
+      var pos = menuRowOf(menuFocus), row = MENU_ROWS[pos.r].items;
+      if (k === KEY.LEFT) menuFocus = row[(pos.c - 1 + row.length) % row.length];
+      if (k === KEY.RIGHT) menuFocus = row[(pos.c + 1) % row.length];
+      if (k === KEY.UP || k === KEY.DOWN) {
+        var next = MENU_ROWS[(pos.r + (k === KEY.DOWN ? 1 : -1) + MENU_ROWS.length) % MENU_ROWS.length].items;
+        menuFocus = next[Math.min(pos.c, next.length - 1)];
+      }
       if (k >= KEY.LEFT && k <= KEY.DOWN) Sound.play('nav');
       if (k === KEY.ENTER) { Sound.play('select'); MENU[menuFocus].action(); return; }
       renderMenu();
@@ -274,7 +293,7 @@
   // Mouse / tap: menu items
   menuList.addEventListener('click', function (e) {
     var li = e.target.closest('li');
-    if (!li) return;
+    if (!li || !li.dataset.i) return;     // ignore the group headings
     menuFocus = +li.dataset.i;
     Sound.play('select');
     MENU[menuFocus].action();

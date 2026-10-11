@@ -15,7 +15,7 @@ ophthalmologist. It is not a medical device and does not diagnose or treat any c
 <a href="{{ site.play_url | relative_url }}"><strong>▶ Play in your browser</strong></a>. Works on
 computers, tablets and phones, with no sign-up or download.
 
-![The home menu: Reading, ten games and Settings]({{ '/screenshots/menu.png' | relative_url }})
+![The home menu: Reading and Settings, games with bars, and two-eye games]({{ '/screenshots/menu.png' | relative_url }})
 
 ## What's inside
 
@@ -61,8 +61,8 @@ computers, tablets and phones, with no sign-up or download.
     <figcaption><strong>Fruit Catcher</strong> (two-eye): catch the fruit, not the bugs</figcaption>
   </figure>
   <figure>
-    <img src="{{ '/screenshots/picture-slide.png' | relative_url }}" alt="Picture Slide: a shuffled robot picture in red tiles with green edges and numbers">
-    <figcaption><strong>Picture Slide</strong> (two-eye): slide the pieces back into the picture</figcaption>
+    <img src="{{ '/screenshots/picture-slide.png' | relative_url }}" alt="Picture Slide: a shuffled red and green dinosaur picture">
+    <figcaption><strong>Picture Slide</strong> (two-eye): rebuild the red and green dinosaur</figcaption>
   </figure>
   <figure>
     <img src="{{ '/screenshots/library.png' | relative_url }}" alt="Story list: 19 story tiles with drawings">
