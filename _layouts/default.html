@@ -20,12 +20,17 @@
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <a href="{{ site.play_url | relative_url }}" class="btn btn-play">▶ Play now</a>
+      <a href="{{ site.play_url | relative_url }}" class="btn btn-play">
+        <svg class="joystick" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="5.5" r="3.5" fill="currentColor"/>
+          <rect x="11" y="8" width="2" height="8" rx="1" fill="currentColor"/>
+          <path d="M4 17.5c0-1.4 1.1-2.5 2.5-2.5h11c1.4 0 2.5 1.1 2.5 2.5V19a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z" fill="currentColor"/>
+          <circle cx="17" cy="18" r="1.1" fill="#ffe1e1"/>
+        </svg>
+        Play now
+      </a>
       {% if page.url != "/" %}
         <a href="{{ '/' | relative_url }}" class="btn">Home</a>
-      {% endif %}
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
     </header>
 
