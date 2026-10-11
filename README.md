@@ -1,7 +1,7 @@
 # Antisuppression Bars — web version
 
 Red-green reading bars and games for at-home binocular vision exercises, played in any
-web browser with red-green (bichrome) glasses. This is the browser edition of the
+web browser with red-green (bichrome) or red-blue glasses. This is the browser edition of the
 LG webOS TV app; it shares the same game and bar code.
 
 > ⚠️ Supplement only — use under the guidance of an optometrist or ophthalmologist.
@@ -16,7 +16,8 @@ LG webOS TV app; it shares the same game and bar code.
 - **Hop & Duck** — jump blocks, duck birds, collect stars
 - **Snake** — eat food, grow longer, avoid the walls and your tail
 - **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
-- **Settings** — horizontal/vertical bars, bar width, strength, red and green shades, text size
+- **Settings** — glasses type (red/green or red/blue), horizontal/vertical bars, bar width,
+  strength, red / green / blue shades, text size
 
 Everything runs offline in the browser. Settings and best scores are saved in the browser's
 local storage; nothing is sent anywhere.
@@ -44,7 +45,8 @@ Open `index.html` in a browser, or use the GitHub Pages link once Pages is enabl
 ## Before playing
 1. Turn off night mode / blue-light filters on your screen — they change the colours.
 2. Wear your red-green glasses.
-3. Adjust bar shades in Settings until each eye sees only its own colour of bar.
+3. In Settings, set **Glasses** to red/green or red/blue, then adjust the shades until each eye
+   sees only its own colour of bar. The home menu has no bars; Settings shows them as a preview.
 
 ## Publish with GitHub Pages
 The workflow in `.github/workflows/pages.yml` deploys the site on every push to `main`.
