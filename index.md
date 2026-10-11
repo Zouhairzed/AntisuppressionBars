@@ -48,6 +48,10 @@ computers, tablets and phones, with no sign-up or download.
     <img src="{{ '/screenshots/block-drop.png' | relative_url }}" alt="Block Drop: falling blocks stacking in a well">
     <figcaption><strong>Block Drop</strong>: rotate the blocks, fill the lines</figcaption>
   </figure>
+  <figure>
+    <img src="{{ '/screenshots/colour-test.png' | relative_url }}" alt="Colour test: a white cat seen through a green square and a red square, with colour sliders">
+    <figcaption><strong>Colour test</strong>: tune the colours to your glasses</figcaption>
+  </figure>
 </div>
 
 ## Before you start
@@ -55,8 +59,8 @@ computers, tablets and phones, with no sign-up or download.
 1. Turn off night mode, blue-light or eye-comfort filters on your screen. They change the colours.
 2. Put on your red-green or red-blue glasses.
 3. Open **Settings** and set **Glasses** to match them.
-4. Adjust the **red** and **green / blue** shades until each eye sees only its own colour of bar.
-   Screens show colour differently, so the best shade depends on your display.
+4. Open **Settings → Colour test**. Close one eye and adjust each colour until the cat disappears
+   for the other eye. Screens show colour differently, so the best colour depends on your display.
 5. Follow the session length and schedule your eye-care provider recommends.
 
 ## Settings
@@ -66,9 +70,10 @@ computers, tablets and phones, with no sign-up or download.
 | Glasses | red / green, red / blue |
 | Orientation | vertical (default) or horizontal bars |
 | Bar width | 20 to 200 px |
-| Bar strength | 20% to 100% |
-| Red shade | 8 shades |
-| Green shade or Blue shade | 9 shades (matches the chosen glasses) |
+| Bar strength | 20% to 100% (default 100%) |
+| Red colour | default #AA1819 (reference reading-bar red), or a preset |
+| Green colour or Blue colour | default #1AA91C (reference reading-bar green), or a preset |
+| Colour test | a cat test with R / G / B colour pickers, to tune both colours to your glasses |
 | Text size | 32 to 72 px, for the reading stories |
 | Music | on / off: soft background music, a different theme for each game |
 | Sound effects | on / off: short sounds for moves, shots, jumps and pickups |

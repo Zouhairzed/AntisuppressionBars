@@ -22,7 +22,10 @@ LG webOS TV app; it shares the same game and bar code.
 - **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
 - **Block Drop** — rotate the falling blocks to fill and clear complete lines
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
-  strength, red / green / blue shades, text size, music and sound effects on/off
+  strength, red / green / blue colours, text size, music and sound effects on/off
+- **Colour test** — a cat seen through each bar colour, with R / G / B pickers: adjust until
+  the cat disappears for the opposite lens. Defaults are the reference reading-bar colours
+  (red #AA1819, green #1AA91C) at 100% strength
 
 Everything runs offline in the browser. Settings and best scores are saved in the browser's
 local storage; nothing is sent anywhere.
@@ -54,8 +57,8 @@ with a **Play now** button.
 ## Before playing
 1. Turn off night mode / blue-light filters on your screen — they change the colours.
 2. Wear your red-green or red-blue glasses.
-3. In Settings, set **Glasses** to red/green or red/blue, then adjust the shades until each eye
-   sees only its own colour of bar. The home menu has no bars; Settings shows them as a preview.
+3. In Settings, set **Glasses** to red/green or red/blue, then open **Colour test** and adjust each
+   colour until the cat disappears for the opposite lens. The home menu has no bars; Settings shows them as a preview.
 
 ## Publish with GitHub Pages
 The site uses Jekyll with the **Cayman** theme. The workflow in `.github/workflows/pages.yml`
@@ -79,5 +82,6 @@ js/bars.js        red/green bar rendering
 js/stories.js     reading content
 js/sound.js       synthesized music and sound effects (Web Audio)
 js/menu-art.js    menu tile icons
+js/calibrate.js   colour test and picker
 js/games/         engine + six games
 ```
