@@ -4,6 +4,10 @@ Red-green reading bars and games for at-home binocular vision exercises, played 
 web browser with red-green (bichrome) or red-blue glasses. This is the browser edition of the
 LG webOS TV app; it shares the same game and bar code.
 
+**🌐 Website: [zouhairzed.github.io/AntisuppressionBars](https://zouhairzed.github.io/AntisuppressionBars/)**
+· **🕹️ [Play now](https://zouhairzed.github.io/AntisuppressionBars/play.html)**
+· [Privacy policy](https://zouhairzed.github.io/AntisuppressionBars/privacy)
+
 > ⚠️ Supplement only — use under the guidance of an optometrist or ophthalmologist.
 > Not a medical device; it does not diagnose or treat any condition.
 
@@ -23,8 +27,10 @@ Everything runs offline in the browser. Settings and best scores are saved in th
 local storage; nothing is sent anywhere.
 
 ## Play
-Open `play.html` in a browser, or use the website once GitHub Pages is enabled (below):
-the home page is a Cayman-themed Jekyll site with a **Play now** button.
+Play online at **https://zouhairzed.github.io/AntisuppressionBars/play.html**, or open
+`play.html` from a local copy of this repo. The
+[home page](https://zouhairzed.github.io/AntisuppressionBars/) is a Cayman-themed Jekyll site
+with a **Play now** button.
 
 ### Keyboard
 | Key | Menu | Reading | Games | Settings |
@@ -51,9 +57,9 @@ the home page is a Cayman-themed Jekyll site with a **Play now** button.
 
 ## Publish with GitHub Pages
 The site uses Jekyll with the **Cayman** theme. The workflow in `.github/workflows/pages.yml`
-builds it with GitHub's Jekyll action and deploys it on every push to `main`.
-Enable it once: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
-(On a free GitHub plan, Pages needs the repository to be public.)
+builds it with GitHub's Jekyll action and deploys it on every push to `main`
+(Pages source: **GitHub Actions**). The live site is
+https://zouhairzed.github.io/AntisuppressionBars/.
 
 ## Project layout
 ```
