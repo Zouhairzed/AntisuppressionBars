@@ -1,0 +1,81 @@
+/* Web additions: scale the 1920x1080 stage to the window, mouse and touch controls. */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overscroll-behavior: none;
+  touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  background: #111;
+  transform-origin: 0 0;
+}
+
+/* Mouse affordances */
+#menu-list li, #settings li { cursor: pointer; }
+#menu-list li:hover { border-color: #bbb; }
+#settings .value { cursor: pointer; }
+#disclaimer { cursor: pointer; }
+
+/* Touch pad, docked under the stage */
+#pad {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+  background: #0b0b0b;
+  border-top: 1px solid #2a2a2a;
+  z-index: 50;
+}
+.pad-group { display: flex; gap: 10px; }
+#pad button {
+  width: 64px;
+  height: 64px;
+  border-radius: 14px;
+  border: 2px solid #444;
+  background: #1d1d1d;
+  color: #eee;
+  font: 600 24px Arial, sans-serif;
+  touch-action: none;
+}
+#pad button.small { width: auto; padding: 0 12px; font-size: 18px; }
+#pad button.ok { background: #2b5cff; border-color: #2b5cff; }
+#pad button.active { background: #555; }
+#pad button.ok.active { background: #1a3fc0; }
+
+/* Narrow screens: stack the two button groups */
+@media (max-width: 640px) {
+  #pad { flex-wrap: wrap; justify-content: center; row-gap: 10px; }
+  #pad button { width: 58px; height: 58px; }
+  #pad button.small { padding: 0 12px; font-size: 16px; }
+}
+
+/* Portrait phones: suggest rotating for a bigger picture */
+#rotate { display: none; }
+@media (orientation: portrait) and (pointer: coarse) {
+  #rotate {
+    display: block;
+    position: fixed;
+    top: calc(16px + env(safe-area-inset-top, 0px));
+    left: 16px;
+    right: 16px;
+    text-align: center;
+    color: #aaa;
+    font: 16px Arial, sans-serif;
+    z-index: 40;
+  }
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Red-green reading bars and games for at-home binocular vision exercises with bichrome (red-green) glasses.">
+  <title>Antisuppression Bars</title>
+  <link rel="icon" type="image/png" href="assets/icon-130.png">
+  <link rel="apple-touch-icon" href="assets/icon-512.png">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/web.css">
+</head>
+<body>
+  <!-- Fixed 1920x1080 stage, scaled to fit the window -->
+  <div id="stage">
+    <!-- Home menu -->
+    <section id="menu" class="screen">
+      <h1 class="title">Antisuppression Bars</h1>
+      <ul id="menu-list"></ul>
+      <p class="hint">▲▼ select · Enter open · S settings · F fullscreen</p>
+    </section>
+
+    <!-- Reading content shown under the bars -->
+    <main id="reader" class="screen hidden">
+      <article id="text"></article>
+    </main>
+
+    <!-- Games render here, under the bars -->
+    <canvas id="game" class="screen hidden" width="1920" height="1080"></canvas>
+    <p id="game-hint" class="hidden"></p>
+
+    <!-- Red/green bar overlay (always on top of content) -->
+    <div id="bars" aria-hidden="true"></div>
+
+    <!-- Settings panel -->
+    <section id="panel" class="hidden">
+      <h1>Settings</h1>
+      <ul id="settings"></ul>
+      <p class="hint">▲▼ select · ◀▶ change · Enter / Esc close</p>
+    </section>
+
+    <!-- First-run disclaimer -->
+    <section id="disclaimer" class="hidden">
+      <h1>Before you start</h1>
+      <p>This app is a supplement to vision therapy prescribed by an optometrist or
+        ophthalmologist. It is not a medical device and does not diagnose or treat any condition.</p>
+      <p>Turn off any screen colour filters (night mode, blue-light filters),
+        then wear your red-green (bichrome) glasses.</p>
+      <p class="hint">Press Enter or tap to continue</p>
+    </section>
+  </div>
+
+  <p id="rotate">Turn your phone sideways for a bigger view</p>
+
+  <!-- On-screen controls for touch screens (outside the stage, not covered by bars) -->
+  <div id="pad" class="hidden" aria-label="Game controls">
+    <div class="pad-group">
+      <button data-key="37" aria-label="Left">◀</button>
+      <button data-key="38" aria-label="Up">▲</button>
+      <button data-key="40" aria-label="Down">▼</button>
+      <button data-key="39" aria-label="Right">▶</button>
+    </div>
+    <div class="pad-group">
+      <button data-key="461" class="small" aria-label="Back to menu">Menu</button>
+      <button data-key="405" class="small" aria-label="Pause">Pause</button>
+      <button data-key="406" class="small" aria-label="Settings">Bars</button>
+      <button data-key="13" class="ok" aria-label="OK">OK</button>
+    </div>
+  </div>
+
+  <script src="js/settings.js"></script>
+  <script src="js/bars.js"></script>
+  <script src="js/stories.js"></script>
+  <script src="js/games/engine.js"></script>
+  <script src="js/games/blaster.js"></script>
+  <script src="js/games/racer.js"></script>
+  <script src="js/games/runner.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
