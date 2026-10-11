@@ -15,7 +15,7 @@ ophthalmologist. It is not a medical device and does not diagnose or treat any c
 <a href="{{ site.play_url | relative_url }}"><strong>▶ Play in your browser</strong></a>. Works on
 computers, tablets and phones, with no sign-up or download.
 
-![The home menu: Reading, seven games and Settings]({{ '/screenshots/menu.png' | relative_url }})
+![The home menu: Reading, six games and Settings]({{ '/screenshots/menu.png' | relative_url }})
 
 ## What's inside
 
@@ -47,10 +47,6 @@ computers, tablets and phones, with no sign-up or download.
   <figure>
     <img src="{{ '/screenshots/block-drop.png' | relative_url }}" alt="Block Drop: falling blocks stacking in a well">
     <figcaption><strong>Block Drop</strong>: rotate the blocks, fill the lines</figcaption>
-  </figure>
-  <figure>
-    <img src="{{ '/screenshots/find-the-sneak.png' | relative_url }}" alt="Find the Sneak: owls wandering, with a dotted spotlight">
-    <figcaption><strong>Find the Sneak</strong>: spot the owl that keeps glancing sideways</figcaption>
   </figure>
   <figure>
     <img src="{{ '/screenshots/library.png' | relative_url }}" alt="Story list: 19 story tiles with drawings">

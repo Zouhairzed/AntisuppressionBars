@@ -22,7 +22,6 @@ LG webOS TV app; it shares the same game and bar code.
 - **Snake** — eat food, grow longer, avoid the walls and your tail
 - **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
 - **Block Drop** — rotate the falling blocks to fill and clear complete lines
-- **Find the Sneak** — one owl keeps glancing sideways; move the spotlight and catch it
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
   strength, red / green / blue colours, text size, music and sound effects on/off
 - **Colour test** — a cat seen through each bar colour, with R / G / B pickers: adjust until
@@ -87,5 +86,5 @@ js/library.js     story list
 js/sound.js       synthesized music and sound effects (Web Audio)
 js/menu-art.js    menu tile icons
 js/calibrate.js   colour test and picker
-js/games/         engine + seven games
+js/games/         engine + six games
 ```

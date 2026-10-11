@@ -32,7 +32,7 @@
 
   var isTouch = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
 
-  var GAMES = [Blaster, Racer, Runner, Snake, Maze, Blocks, Sneak];
+  var GAMES = [Blaster, Racer, Runner, Snake, Maze, Blocks];
   var MENU = [
     { label: 'Reading', icon: MENU_ART.reading.icon, sub: STORIES.length + ' stories', action: function () { openLibrary(); } }
   ].concat(GAMES.map(function (g) {
@@ -208,12 +208,12 @@
     if (screen === 'library') { Library.key(k); return; }
 
     if (screen === 'menu') {
-      // 3 x 3 grid of tiles: LEFT/RIGHT step through, UP/DOWN jump a row
+      // 4 x 2 grid of tiles: LEFT/RIGHT step through, UP/DOWN jump a row
       var n = MENU.length;
       if (k === KEY.LEFT) menuFocus = (menuFocus - 1 + n) % n;
       if (k === KEY.RIGHT) menuFocus = (menuFocus + 1) % n;
-      if (k === KEY.UP) menuFocus = (menuFocus - 3 + n) % n;
-      if (k === KEY.DOWN) menuFocus = (menuFocus + 3) % n;
+      if (k === KEY.UP) menuFocus = (menuFocus - 4 + n) % n;
+      if (k === KEY.DOWN) menuFocus = (menuFocus + 4) % n;
       if (k >= KEY.LEFT && k <= KEY.DOWN) Sound.play('nav');
       if (k === KEY.ENTER) { Sound.play('select'); MENU[menuFocus].action(); return; }
       renderMenu();
