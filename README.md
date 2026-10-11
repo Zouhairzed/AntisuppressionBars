@@ -28,7 +28,7 @@ LG webOS TV app; it shares the same game and bar code.
   - **Picture Slide** — sliding dinosaur puzzle: some parts of each dinosaur for the weaker eye, the rest for the stronger eye
   - **Cheese Chase** — maze chase: mouse and crumbs for the weaker eye, walls and cats for the stronger eye
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
-  strength, red / green / blue colours, weaker eye, strong-eye contrast, text size, music and
+  strength, red / green / blue colours, weaker eye, strong-eye contrast, text size, menu theme (night or light), music and
   sound effects on/off
 - **Colour test** — a cat seen through each bar colour, with R / G / B pickers: adjust until
   the cat disappears for the opposite lens. Defaults are red #9B1819 and green #1A9B1C at

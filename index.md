@@ -109,6 +109,7 @@ what level to start with.
 | Weaker eye | behind the red lens or behind the green / blue lens, for the two-eye games |
 | Strong-eye contrast | 100% to 20%: dims what only the stronger eye sees in the two-eye games |
 | Text size | 32 to 72 px, for the reading stories |
+| Menu theme | night (default) or light, for the home menu and story list |
 | Music | on / off: soft background music, a different theme for each game |
 | Sound effects | on / off: short sounds for moves, shots, jumps and pickups |
 
