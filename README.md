@@ -10,7 +10,7 @@ LG webOS TV app; it shares the same game and bar code.
 ![Shape Blaster](screenshots/shape-blaster.png)
 
 ## What's inside
-- **Reading** — 6 original short stories under the bars
+- **Reading** — 11 original short stories under the bars: 8 in English, 3 in Arabic (right-to-left)
 - **Shape Blaster** — move the cannon and shoot falling shapes
 - **Lane Racer** — switch lanes to dodge traffic
 - **Hop & Duck** — jump blocks, duck birds, collect stars

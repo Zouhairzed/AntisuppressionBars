@@ -20,7 +20,7 @@ computers, tablets and phones, with no sign-up or download.
 <div class="shots">
   <figure>
     <img src="{{ '/screenshots/reading.png' | relative_url }}" alt="A story shown under red and green bars">
-    <figcaption><strong>Reading</strong>: 6 original short stories</figcaption>
+    <figcaption><strong>Reading</strong>: 11 stories, 8 English and 3 Arabic</figcaption>
   </figure>
   <figure>
     <img src="{{ '/screenshots/shape-blaster.png' | relative_url }}" alt="Shape Blaster: a cannon shooting falling shapes">
