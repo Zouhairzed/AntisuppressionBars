@@ -14,6 +14,8 @@ LG webOS TV app; it shares the same game and bar code.
 - **Shape Blaster** — move the cannon and shoot falling shapes
 - **Lane Racer** — switch lanes to dodge traffic
 - **Hop & Duck** — jump blocks, duck birds, collect stars
+- **Snake** — eat food, grow longer, avoid the walls and your tail
+- **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
 - **Settings** — horizontal/vertical bars, bar width, strength, red and green shades, text size
 
 Everything runs offline in the browser. Settings and best scores are saved in the browser's
@@ -25,7 +27,7 @@ Open `index.html` in a browser, or use the GitHub Pages link once Pages is enabl
 ### Keyboard
 | Key | Menu | Reading | Games | Settings |
 |---|---|---|---|---|
-| ↑ ↓ | select | scroll | jump / duck (Hop & Duck) | choose setting |
+| ↑ ↓ | select | scroll | jump / duck, steer (Snake, Maze Mouse) | choose setting |
 | ← → | — | change story | move / change lane | change value |
 | Enter / Space | open | open settings | fire / jump / play again | close |
 | Esc | — | back to menu | back to menu | close |
@@ -58,5 +60,5 @@ js/app.js         web controller (screens, keyboard, mouse, touch)
 js/settings.js    saved settings
 js/bars.js        red/green bar rendering
 js/stories.js     reading content
-js/games/         engine + three games
+js/games/         engine + five games
 ```
