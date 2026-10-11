@@ -36,7 +36,7 @@ LG webOS TV app; it shares the same game and bar code.
 - **Two-eye Reading** — the same stories with no bars: the words take turns between the weaker eye's
   colour and the stronger eye's colour, so each eye sees every other word
 
-The home menu has two rows (with bars · two-eye, no bars). Settings opens from the **⋮** button at the top right, or with S.
+The home menu is a 3 × 4 grid in two groups of six (with bars · two-eye, no bars). Settings opens from the **⋮** button at the top right, or with S.
 
 Everything runs offline in the browser. Settings and best scores are saved in the browser's
 local storage; nothing is sent anywhere.
