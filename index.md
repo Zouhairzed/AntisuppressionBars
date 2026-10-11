@@ -15,14 +15,14 @@ ophthalmologist. It is not a medical device and does not diagnose or treat any c
 <a href="{{ site.play_url | relative_url }}"><strong>▶ Play in your browser</strong></a>. Works on
 computers, tablets and phones, with no sign-up or download.
 
-![The home menu: Reading, six games and Settings]({{ '/screenshots/menu.png' | relative_url }})
+![The home menu: Reading, seven games and Settings]({{ '/screenshots/menu.png' | relative_url }})
 
 ## What's inside
 
 <div class="shots">
   <figure>
     <img src="{{ '/screenshots/reading.png' | relative_url }}" alt="A story shown under red and green bars">
-    <figcaption><strong>Reading</strong>: 11 stories, 8 English and 3 Arabic</figcaption>
+    <figcaption><strong>Reading</strong>: 19 stories with pictures, in English, French and Arabic</figcaption>
   </figure>
   <figure>
     <img src="{{ '/screenshots/shape-blaster.png' | relative_url }}" alt="Shape Blaster: a cannon shooting falling shapes">
@@ -49,6 +49,14 @@ computers, tablets and phones, with no sign-up or download.
     <figcaption><strong>Block Drop</strong>: rotate the blocks, fill the lines</figcaption>
   </figure>
   <figure>
+    <img src="{{ '/screenshots/find-the-sneak.png' | relative_url }}" alt="Find the Sneak: owls wandering, with a dotted spotlight">
+    <figcaption><strong>Find the Sneak</strong>: spot the owl that keeps glancing sideways</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/screenshots/library.png' | relative_url }}" alt="Story list: 19 story tiles with drawings">
+    <figcaption><strong>Story list</strong>: pick a story by its picture</figcaption>
+  </figure>
+  <figure>
     <img src="{{ '/screenshots/colour-test.png' | relative_url }}" alt="Colour test: a white cat seen through a green square and a red square, with colour sliders">
     <figcaption><strong>Colour test</strong>: tune the colours to your glasses</figcaption>
   </figure>
@@ -71,8 +79,8 @@ computers, tablets and phones, with no sign-up or download.
 | Orientation | vertical (default) or horizontal bars |
 | Bar width | 20 to 200 px |
 | Bar strength | 20% to 100% (default 100%) |
-| Red colour | default #AA1819 (reference reading-bar red), or a preset |
-| Green colour or Blue colour | default #1AA91C (reference reading-bar green), or a preset |
+| Red colour | default #9B1819, or a preset |
+| Green colour or Blue colour | default #1A9B1C (green), or a preset |
 | Colour test | a cat test with R / G / B colour pickers, to tune both colours to your glasses |
 | Text size | 32 to 72 px, for the reading stories |
 | Music | on / off: soft background music, a different theme for each game |

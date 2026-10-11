@@ -14,18 +14,20 @@ LG webOS TV app; it shares the same game and bar code.
 ![Home menu](screenshots/menu.png)
 
 ## What's inside
-- **Reading** — 11 original short stories under the bars: 8 in English, 3 in Arabic (right-to-left)
+- **Reading** — a story list with 19 original stories, each with its own drawing: 12 in English
+  (including funny stories for kids), 4 in French and 3 in Arabic (right-to-left)
 - **Shape Blaster** — move the cannon and shoot falling shapes
 - **Lane Racer** — switch lanes to dodge traffic
 - **Hop & Duck** — jump blocks, duck birds, collect stars
 - **Snake** — eat food, grow longer, avoid the walls and your tail
 - **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
 - **Block Drop** — rotate the falling blocks to fill and clear complete lines
+- **Find the Sneak** — one owl keeps glancing sideways; move the spotlight and catch it
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
   strength, red / green / blue colours, text size, music and sound effects on/off
 - **Colour test** — a cat seen through each bar colour, with R / G / B pickers: adjust until
-  the cat disappears for the opposite lens. Defaults are the reference reading-bar colours
-  (red #AA1819, green #1AA91C) at 100% strength
+  the cat disappears for the opposite lens. Defaults are red #9B1819 and green #1A9B1C at
+  100% strength
 
 Everything runs offline in the browser. Settings and best scores are saved in the browser's
 local storage; nothing is sent anywhere.
@@ -79,9 +81,11 @@ css/web.css       window scaling, mouse and touch pad
 js/app.js         web controller (screens, keyboard, mouse, touch)
 js/settings.js    saved settings
 js/bars.js        red/green bar rendering
-js/stories.js     reading content
+js/stories.js     reading content (English, French, Arabic)
+js/story-art.js   story drawings
+js/library.js     story list
 js/sound.js       synthesized music and sound effects (Web Audio)
 js/menu-art.js    menu tile icons
 js/calibrate.js   colour test and picker
-js/games/         engine + six games
+js/games/         engine + seven games
 ```
