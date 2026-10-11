@@ -24,6 +24,7 @@ html, body {
 /* Mouse affordances */
 #menu-list li, #settings li { cursor: pointer; }
 #menu-list li:hover { border-color: #bbb; }
+#menu-more:hover { border-color: #bbb; }
 #settings .value { cursor: pointer; }
 #disclaimer { cursor: pointer; }
 

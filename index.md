@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Antisuppression Bars
+title: Fusion Lab
 ---
 
-Antisuppression Bars puts red-green (or red-blue) bars over reading text and simple games, for
+Fusion Lab puts red-green (or red-blue) bars over reading text and simple games, for
 binocular vision exercises at home with bichrome glasses. Each eye sees only part of the picture
 through its filter, so both eyes have to work together to read the story or follow the game.
 
@@ -15,7 +15,7 @@ ophthalmologist. It is not a medical device and does not diagnose or treat any c
 <a href="{{ site.play_url | relative_url }}"><strong>▶ Play in your browser</strong></a>. Works on
 computers, tablets and phones, with no sign-up or download.
 
-![The home menu: Reading and Settings, games with bars, and two-eye games]({{ '/screenshots/menu.png' | relative_url }})
+![The home menu: reading and games with bars, and two-eye reading and games]({{ '/screenshots/menu.png' | relative_url }})
 
 ## What's inside
 
@@ -43,6 +43,10 @@ computers, tablets and phones, with no sign-up or download.
   <figure>
     <img src="{{ '/screenshots/maze-mouse.png' | relative_url }}" alt="Maze Mouse: a mouse in a maze with crumbs and a cat">
     <figcaption><strong>Maze Mouse</strong>: eat crumbs, escape the cats</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/screenshots/reading-two-eye.png' | relative_url }}" alt="Two-eye Reading: a story with words in alternating red and green">
+    <figcaption><strong>Two-eye Reading</strong>: every other word for each eye, no bars</figcaption>
   </figure>
   <figure>
     <img src="{{ '/screenshots/split-stack.png' | relative_url }}" alt="Split Stack: the falling block in red, the stack in green">
@@ -78,14 +82,14 @@ computers, tablets and phones, with no sign-up or download.
 
 1. Turn off night mode, blue-light or eye-comfort filters on your screen. They change the colours.
 2. Put on your red-green or red-blue glasses.
-3. Open **Settings** and set **Glasses** to match them.
+3. Open **Settings** (the **⋮** button at the top right) and set **Glasses** to match them.
 4. Open **Settings → Colour test**. Close one eye and adjust each colour until the cat disappears
    for the other eye. Screens show colour differently, so the best colour depends on your display.
 5. Follow the session length and schedule your eye-care provider recommends.
 
-## Two-eye games
+## Two-eye reading and games
 
-In **Split Stack**, **Ball & Paddle**, **Fruit Catcher**, **Picture Slide** and **Cheese Chase** the bars are switched off. Instead,
+In **Two-eye Reading**, **Split Stack**, **Ball & Paddle**, **Fruit Catcher**, **Picture Slide** and **Cheese Chase** the bars are switched off. Instead,
 some parts of the game are drawn only in the weaker eye's colour and others only in the stronger
 eye's colour (the Red and Green / Blue colours you set in Settings), so you can only play by using both eyes together. Set **Weaker eye** in
 Settings first. **Strong-eye contrast** dims the stronger eye's parts; ask your eye-care provider

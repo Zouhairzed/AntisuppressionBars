@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Privacy Policy
-description: Antisuppression Bars for web browsers and LG webOS TV · Effective 11 October 2026
+description: Fusion Lab for web browsers and LG webOS TV · Effective 11 October 2026
 permalink: /privacy
 ---
 
-**In short:** Antisuppression Bars does not collect, send or share any personal data. Everything
+**In short:** Fusion Lab does not collect, send or share any personal data. Everything
 it remembers stays on your device.
 
 ## What the app stores
@@ -40,7 +40,7 @@ collects no personal data, it collects none from children.
 
 ## Medical notice
 
-Antisuppression Bars is a supplement to vision therapy prescribed by an optometrist or
+Fusion Lab is a supplement to vision therapy prescribed by an optometrist or
 ophthalmologist. It is not a medical device and does not diagnose or treat any condition.
 
 ## Third-party services
@@ -48,7 +48,7 @@ ophthalmologist. It is not a medical device and does not diagnose or treat any c
 The web version is hosted on GitHub Pages, which may keep standard server logs such as IP
 addresses under [GitHub's privacy statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement).
 On LG TVs, downloading and running apps is handled by LG's platform and LG Content Store, which
-have their own privacy policies. This policy covers only the Antisuppression Bars app.
+have their own privacy policies. This policy covers only the Fusion Lab app.
 
 ## Changes and contact
 

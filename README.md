@@ -1,4 +1,4 @@
-# Antisuppression Bars — web version
+# Fusion Lab — web version
 
 Red-green reading bars and games for at-home binocular vision exercises, played in any
 web browser with red-green (bichrome) or red-blue glasses. This is the browser edition of the
@@ -33,6 +33,10 @@ LG webOS TV app; it shares the same game and bar code.
 - **Colour test** — a cat seen through each bar colour, with R / G / B pickers: adjust until
   the cat disappears for the opposite lens. Defaults are red #9B1819 and green #1A9B1C at
   100% strength
+- **Two-eye Reading** — the same stories with no bars: the words take turns between the weaker eye's
+  colour and the stronger eye's colour, so each eye sees every other word
+
+The home menu has two rows (with bars · two-eye, no bars). Settings opens from the **⋮** button at the top right, or with S.
 
 Everything runs offline in the browser. Settings and best scores are saved in the browser's
 local storage; nothing is sent anywhere.
@@ -57,7 +61,7 @@ with a **Play now** button.
 | F | fullscreen | fullscreen | fullscreen | fullscreen |
 
 ### Mouse and touch
-- Click or tap menu items; click the left or right half of a setting's value to change it.
+- Click or tap menu items, or ⋮ (top right) for Settings; click the left or right half of a setting's value to change it.
 - Reading: mouse wheel or drag to scroll, swipe sideways to change story.
 - On phones and tablets, an on-screen pad (arrows, OK, Pause, Bars, Menu) appears in the games and reader.
 
