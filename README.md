@@ -25,7 +25,7 @@ LG webOS TV app; it shares the same game and bar code.
   - **Split Stack** — the falling block for the weaker eye, the stack for the stronger eye
   - **Ball & Paddle** — ball and bricks for the weaker eye, paddle for the stronger eye
   - **Fruit Catcher** — fruit and bugs for the weaker eye, basket for the stronger eye
-  - **Picture Slide** — sliding dinosaur puzzle: some parts of each dinosaur for the weaker eye, the rest for the stronger eye
+  - **Garden Puzzle** — drag-and-drop garden puzzle: flowers and fruit for the weaker eye, leaves and grass for the stronger eye
   - **Cheese Chase** — maze chase: mouse and crumbs for the weaker eye, walls and cats for the stronger eye
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
   strength, red / green / blue colours, weaker eye, strong-eye contrast, text size, menu theme (night or light), music and
@@ -63,6 +63,7 @@ with a **Play now** button.
 ### Mouse and touch
 - Click or tap menu items, or ⋮ (top right) for Settings; click the left or right half of a setting's value to change it.
 - Reading: mouse wheel or drag to scroll, swipe sideways to change story.
+- Garden Puzzle: drag the pieces with the mouse or a finger.
 - On phones and tablets, an on-screen pad (arrows, OK, Pause, Bars, Menu) appears in the games and reader.
 
 ## Before playing

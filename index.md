@@ -61,8 +61,8 @@ computers, tablets and phones, with no sign-up or download.
     <figcaption><strong>Fruit Catcher</strong> (two-eye): catch the fruit, not the bugs</figcaption>
   </figure>
   <figure>
-    <img src="{{ '/screenshots/picture-slide.png' | relative_url }}" alt="Picture Slide: a shuffled red and green dinosaur picture">
-    <figcaption><strong>Picture Slide</strong> (two-eye): rebuild the red and green dinosaur</figcaption>
+    <img src="{{ '/screenshots/garden-puzzle.png' | relative_url }}" alt="Garden Puzzle: a red and green apple tree, half rebuilt, with pieces in a tray">
+    <figcaption><strong>Garden Puzzle</strong> (two-eye): drag the pieces of the red and green garden</figcaption>
   </figure>
   <figure>
     <img src="{{ '/screenshots/cheese-chase.png' | relative_url }}" alt="Cheese Chase: a red mouse and crumbs in a green maze with green cats">
@@ -89,7 +89,7 @@ computers, tablets and phones, with no sign-up or download.
 
 ## Two-eye reading and games
 
-In **Two-eye Reading**, **Split Stack**, **Ball & Paddle**, **Fruit Catcher**, **Picture Slide** and **Cheese Chase** the bars are switched off. Instead,
+In **Two-eye Reading**, **Split Stack**, **Ball & Paddle**, **Fruit Catcher**, **Garden Puzzle** and **Cheese Chase** the bars are switched off. Instead,
 some parts of the game are drawn only in the weaker eye's colour and others only in the stronger
 eye's colour (the Red and Green / Blue colours you set in Settings), so you can only play by using both eyes together. Set **Weaker eye** in
 Settings first. **Strong-eye contrast** dims the stronger eye's parts; ask your eye-care provider
