@@ -11,7 +11,7 @@ LG webOS TV app; it shares the same game and bar code.
 > ⚠️ Supplement only — use under the guidance of an optometrist or ophthalmologist.
 > Not a medical device; it does not diagnose or treat any condition.
 
-![Shape Blaster](screenshots/shape-blaster.png)
+![Home menu](screenshots/menu.png)
 
 ## What's inside
 - **Reading** — 11 original short stories under the bars: 8 in English, 3 in Arabic (right-to-left)
@@ -20,6 +20,7 @@ LG webOS TV app; it shares the same game and bar code.
 - **Hop & Duck** — jump blocks, duck birds, collect stars
 - **Snake** — eat food, grow longer, avoid the walls and your tail
 - **Maze Mouse** — eat every crumb while cats chase you; big cheese scares them
+- **Block Drop** — rotate the falling blocks to fill and clear complete lines
 - **Settings** — glasses type (red/green or red/blue), vertical (default) or horizontal bars, bar width,
   strength, red / green / blue shades, text size, music and sound effects on/off
 
@@ -35,8 +36,8 @@ with a **Play now** button.
 ### Keyboard
 | Key | Menu | Reading | Games | Settings |
 |---|---|---|---|---|
-| ↑ ↓ | select | scroll | jump / duck, steer (Snake, Maze Mouse) | choose setting |
-| ← → | — | change story | move / change lane | change value |
+| ↑ ↓ | select | scroll | jump / duck, steer, rotate / drop (Block Drop) | choose setting |
+| ← → | select | change story | move / change lane / steer | change value |
 | Enter / Space | open | open settings | fire / jump / play again | close |
 | Esc | — | back to menu | back to menu | close |
 | S | settings | settings | settings | close |
@@ -77,5 +78,6 @@ js/settings.js    saved settings
 js/bars.js        red/green bar rendering
 js/stories.js     reading content
 js/sound.js       synthesized music and sound effects (Web Audio)
-js/games/         engine + five games
+js/menu-art.js    menu tile icons
+js/games/         engine + six games
 ```

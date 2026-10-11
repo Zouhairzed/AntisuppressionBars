@@ -15,6 +15,8 @@ ophthalmologist. It is not a medical device and does not diagnose or treat any c
 <a href="{{ site.play_url | relative_url }}"><strong>▶ Play in your browser</strong></a>. Works on
 computers, tablets and phones, with no sign-up or download.
 
+![The home menu: Reading, six games and Settings]({{ '/screenshots/menu.png' | relative_url }})
+
 ## What's inside
 
 <div class="shots">
@@ -41,6 +43,10 @@ computers, tablets and phones, with no sign-up or download.
   <figure>
     <img src="{{ '/screenshots/maze-mouse.png' | relative_url }}" alt="Maze Mouse: a mouse in a maze with crumbs and a cat">
     <figcaption><strong>Maze Mouse</strong>: eat crumbs, escape the cats</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/screenshots/block-drop.png' | relative_url }}" alt="Block Drop: falling blocks stacking in a well">
+    <figcaption><strong>Block Drop</strong>: rotate the blocks, fill the lines</figcaption>
   </figure>
 </div>
 
